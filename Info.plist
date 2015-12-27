@@ -32,6 +32,8 @@
 			<string>net.osx86.kexts.${PRODUCT_NAME:rfc1034identifier}</string>
 			<key>IOClass</key>
 			<string>GenericUSBXHCI</string>
+			<key>#IOPCIPrimaryMatch</key>
+			<string>0x01941033</string>
 			<key>IOPCIClassMatch</key>
 			<string>0x0c033000</string>
 			<key>IOPCIPauseCompatible</key>
@@ -48,6 +50,18 @@
 			<true/>
 			<key>IntelDoze</key>
 			<false/>
+			<key>DeviceWhitelist</key>
+			<dict>
+				<key>1b73_1000</key>
+				<integer>0</integer>
+			</dict>
+			<key>DeviceBlacklist</key>
+			<dict>
+				<key>8086</key>
+				<integer>0</integer>
+				<key>1b73</key>
+				<integer>0</integer>
+			</dict>
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
